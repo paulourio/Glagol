@@ -8,22 +8,188 @@
 \usepackage{multicol}
 \usepackage{aecompl}
 \usepackage{hyperref}
+\usepackage{tikz}
 
 \hypersetup{
-    pdftitle={Your article title},
+    pdftitle={Short Grammar},
     pdfauthor={Игорь},
 }
 
-\title{Your article title}
-\date{2011}
-\author{Игорь \\ untie@mail.ru}
-
-\newcommand{\greek}[1]{\selectlanguage{greek} \multirow{1}{*}{#1}}
-\newcommand{\hlight}[1]{\color{red}\underline{#1}}
+\title{Short Grammar}
+\date{\,}
 
 \begin{document}
-	\maketitle
+\maketitle
 	
-	\input{verb}
+\section*{Глагол (The Verb)}
+\subsection*{Comparisons}
+\sf
+We are speaking different words and can't understand each other, but the true 
+is that our languages are very similar. Many words have one common ancestor and 
+they change not by accident, they changed according to some phonetical rule. 
+One of them is transition of $p \rightarrow b \rightarrow v$.
+
+\vspace{1cm}
+
+%Таблица для греческого%
+\begin{tabular}{| l | p{4cm} | p{4cm}|}
+	\hline
+	\multicolumn{3}{| c |}{Singularis}\\
+	\hline
+	1 & \selectlanguage{greek} \multirow{1}{*}{paideus\color{red}\underline{w}}
+	  & я воспита\color{red}\underline{ю} \\ \hline
+	2 & \selectlanguage{greek} \multirow{1}{*}{paideus\color{red}\underline{eis}}
+	  & ты воспита\color{red}\underline{ешь} \\ \hline
+	3 & \selectlanguage{greek} \multirow{1}{*}{paideuei} 
+	  & он воспитает \\ \hline
+	\multicolumn{3}{| c |}{Pluralis} \\ \hline
+	1 & \selectlanguage{greek} \multirow{1}{*}{paideusom\color{red}\underline{en}}
+	  & мы воспита\color{red}\underline{ем} \\ \hline
+	2 & \selectlanguage{greek} \multirow{1}{*}{paideuse\color{red}\underline{te}}
+	  & вы воспитае\color{red}\underline{те} \\ \hline
+	3 & \selectlanguage{greek} \multirow{1}{*}{paideusousin}
+	  & они воспитают \\ 
+	\hline
+\end{tabular}
+%Здесь другая таблица для латыни%
+
+\vspace{1cm}
+
+\begin{tabular}{| l | p{4cm} | p{4cm}| l | l | l | l |} 
+	\cline{1-3}
+	\cline{5-7}
+	\multicolumn{3}{| c |}{Singularis} & \, & \multicolumn{3}{| c |}{Imperativus}\\
+	\cline{1-3}
+	\cline{5-7}
+	1 & orn\color{red}\underline{o} & я украша\color{red}\underline{ю}
+	  & \, & ты & orn\color{red}\underline{a}
+	  & украш\color{red}\underline{ай} \\
+	\cline{5-7}
+	\cline{1-3}
+	2 & orna\color{red}\underline{s} & ты украша\color{red}\underline{ешь}
+	  & \, & вы & orna\color{red}\underline{te}
+	  & украшай\color{red}\underline{те} \\ 
+	\cline{5-7} 
+	\cline{1-3}
+	3 & orna\color{red}\underline{t} & он украшае\color{red}\underline{т} \\ 
+	\cline{1-3}
+	%Pluralis%
+	\multicolumn{3}{| c |}{Pluralis} \\
+	\cline{1-3}
+	1 & orna\color{red}\underline{mus} & мы украша\color{red}\underline{ем} \\
+	\cline{1-3}
+	2 & orna\color{red}\underline{tis} & вы украшае\color{red}\underline{те} \\
+	\cline{1-3}
+	3 & ornan\color{red}\underline{t} & они украшаю\color{red}\underline{т}\\ 
+	\cline{1-3}
+\end{tabular}
+
+%Сравнение с португальским%
+%Singularis%
+\begin{tabular}{| l | p{4cm} | p{4cm}| l | l | l | l |} 
+	\cline{1-3}
+	\multicolumn{3}{| c |}{Singularis}\\
+	\cline{1-3}
+	1 & eu lav\color{red}\underline{o} & я мо\color{red}\underline{ю}\\
+	\cline{1-3}
+	2 & tu lava\color{red}\underline{s} & ты мое\color{red}\underline{шь}\\
+	\cline{1-3}
+	3 & ele lava & он моет \\ 
+	\cline{1-3}
+	%Pluralis%
+	\multicolumn{3}{| c |}{Pluralis}\\
+	\cline{1-3}
+	1 & nós lava\color{red}\underline{mos} & мы мо\color{red}\underline{ем}\\
+	\cline{1-3}
+	2 & vós lava\color{red}\underline{is} & вы мое\color{red}\underline{те}\\
+	\cline{1-3}
+	3 & eles lavam & они моют\\ 
+	\cline{1-3}
+\end{tabular}
+
+%Таблица для русского%
+
+\vspace{1cm}
+
+Russian verbs in present tense have -у/ю for я, and –шь for ты, but it was expected by us from $s \rightarrow sh$ and $o \rightarrow u$ transitions. Let’s look at an example:
+
+\vspace{1cm}
+
+\begin{tabular}{| l | p{4cm} | p{4cm}|}
+\hline
+\multicolumn{2}{| c |}{Singularis}& \multicolumn{1}{| c |}{Pluralis}\\
+\hline
+1&я иду&мы ид\"eм\\
+\hline
+2&ты ид\"eшь&вы ид\"eте\\
+\hline
+3&он ид\"eт&они идут\\
+\hline
+\end{tabular}
+
+\subsection*{Russian Verb}
+This article purposes to designate the main features of the russian verb in order to a learner get abilities to understand  meaning of a verb in a text. It is lack of details such as exclusions, archaic types of conjugation, definitions of terms etc.
+
+Thus, Russian verb has the following grammatical agreements:
+\begin{itemize}
+\newcommand{\punkt}[1]{\item[$-$]{#1}}
+\punkt{with tenses, there are past simple, present simple and future simple}
+\punkt{with person or persons in a way as it was announced above}
+\punkt{with person's gender (is used only in past tense and passive voice)}
+\punkt{with moods, there are indicative, conditional and imperative.}
+\punkt{with voice, there are active and passive}
+\punkt{with verbal aspect: duration of an action, there are imperfective (continuous action) and perfective (completed action)}
+\end{itemize}
+\subsubsection*{Infinitive}
+\definecolor{dgreen}{rgb}{0.3,0.6,0.3}
+Infinitive has the terminal \textcolor{dgreen}{-ть} with verbs which have a root ending in a vowel:  
+\begin{itemize}
+\vspace{-0.2cm}
+\item[$-$]работ\textcolor{dgreen}{ать}, сп\textcolor{dgreen}{ать}, зн\textcolor{dgreen}{ать}.
+\end{itemize}
+If a root has consonant ending then \textcolor{dgreen}{-ть} turns into \textcolor{dgreen}{-ти}:
+\begin{itemize}
+\vspace{-0.2cm}
+\item[$-$]ид\textcolor{dgreen}{ти}, най\textcolor{dgreen}{ти}, тряс\textcolor{dgreen}{ти} (to shake). 
+\end{itemize}
+Finally, if a root ending in \textbf{-г} or \textbf{-к} then \textcolor{dgreen}{-ть} joins with them and turns into \textcolor{dgreen}{-чь}: 
+\begin{itemize}
+\vspace{-0.2cm}
+\item[$-$]то\textcolor{dgreen}{к} (a current)\,$ \rightarrow $\,те\textcolor{dgreen}{чь} (to flow), пе\textcolor{dgreen}{чь} (to bake), же\textcolor{dgreen}{чь} (to sting, to burn).
+\end{itemize}
+\textit{Summary}: verb has terminals: \textcolor{dgreen}{-ть}, \textcolor{dgreen}{-ти} and \textcolor{dgreen}{-чь}.
+\subsubsection*{Aspect}
+The loss of three of the former old Slavonic six tenses has been offset by the development, as in other Slavic languages, of verbal aspect. Most verbs come in pairs, one with imperfective or continuous connotation, the other with perfective or completed, usually formed with a (prepositional) prefix, but occasionally using a different root. E.g., спать (to sleep) is imperfective; поспать (to take a nap) is perfective.
+
+Imperfective verbs mean:
+\begin{itemize}
+\item actions in progress, just ongoing states and activities, with significant course (in opinion of the speaker).
+\item activities posing the background for other (perfective) activities, ex. Я читал книгу, когда зазвонил телефон (I was reading the book when the telephone rang). Here читал is imperfect past form of читать (to read) while зазвонил is a perfect past form of звонить (to ring).
+\item simultaneous activities, ex. Я буду читать книгу пока брат будет писать письмо (I will be reading the book while brother will be writing the letter)
+\item durative activities, lasting through some time, e.g. Он кричал (he was shouting), Это будет вибрировать (it will be vibrating)
+\item motions without a strict aim, ex. Я хожу (I am walking here and there)
+\item multiple (iterative) activities, ex. дописывать (to insert many times to the text), Мы будем выходить (we will go out (many times)
+\item non-resultative activities, only heading towards some purpose: Я буду писать письмо (I will be writing the letter)
+\item continuous states, ex. Я буду стоять (I will be standing)
+\end{itemize}
+Perfective verbs can refer to the past or to the future, but not to present activities – an activity happening now cannot be ended, so it cannot be perfective. Perfective verbs convey:
+\begin{itemize}
+\item  states and activities that were ended (even if a second ago) or will be ended, with insignificant course, short or treated as a whole by the speaker, ex. крикнул (he shouted), Оно дёргнется (it will stir (only once))
+\item single-time activities, ex. дописать (to insert to the text), он вышел (he went out)
+\item actions whose goals have already been achieved, even if with difficulty, ex. przeczytałem 'I have read', doczytała się 'she finished reading and found what she had sought';
+\item reasons for the state, ex. pokochała 'she came to love', zrozumiesz 'you (sg.) will understand', poznamy 'we will get to know';
+\item the beginning of the activity or the state, ex. wstanę 'I will stand up' (and I will stand), zaczerwienił się 'he reddened';
+\item the end of the activity or the state, ex. dośpiewaj 'sing until the end';
+\item activities executed in many places, on many objects or by many subjects at the same time, ex. powynosił 'he carried out (many things)', popękają 'They will break out in many places', poucinać 'To cut off many items';
+\item actions or states that last some time, ex. postoję 'I will stand for a little time', pobył 'he was (there) for some time'.
+\end{itemize}
+
+%%%%%Here is experimental part of working with grafical package%%%%
+\begin{tikzpicture}
+\draw (-1.5,0) -- (1.5,0) -- (1.5,-1.5) -- (-1.5,-1.5) -- (-1.5,0);
+\draw (0,0.5) circle(10pt);
+\end{tikzpicture}
+
 \end{document}
+
 
