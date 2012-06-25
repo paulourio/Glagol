@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+
+\usepackage[english,greek,russian]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{ulem}
+\usepackage{multicol}
+\usepackage{aecompl}
+\usepackage{hyperref}
+
+\hypersetup{
+    pdftitle={Your article title},
+    pdfauthor={Игорь},
+}
+
+\title{Your article title}
+\date{2011}
+\author{Игорь \\ untie@mail.ru}
+
+\newcommand{\greek}[1]{\selectlanguage{greek} \multirow{1}{*}{#1}}
+\newcommand{\hlight}[1]{\color{red}\underline{#1}}
+
+\begin{document}
+	\maketitle
+	
+	\input{verb}
+\end{document}
+
